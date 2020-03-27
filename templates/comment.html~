@@ -1,0 +1,12 @@
+
+
+
+    <h1>{{ question.question_text }}</h1>
+<ul>
+{% for comment in comments %}
+    <li>{{ comment.name}}</li>
+   <li>{{ comment.body}}</li>
+
+{% endfor %}
+</ul
+  

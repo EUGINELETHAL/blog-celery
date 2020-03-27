@@ -3,10 +3,10 @@
 ; ==================================
 
 ; the name of your supervisord program
-[program:mysitecelery]
+[program:mysitecelerybeat]
 
 ; Set full path to celery program if using virtualenv
-command=/home/lucy/Videos/blogrepo/venv/bin/celery worker -A mysite --loglevel=INFO
+command=/home/lucy/Videos/blogrepo/venv/bin/celerybeat worker -A mysite --loglevel=INFO
 
 ; The directory to your Django project
 directory=/home/lucy/Videos/blogrepo/Mysite
@@ -18,11 +18,11 @@ user=lucy
 ; Supervisor will start as many instances of this program as named by numprocs
 numprocs=1
 
-# ; Put process stdout output in this file
-# stdout_logfile=/var/log/celery/mysite_worker.log
+; Put process stdout output in this file
+# stdout_logfile=/var/log/celery/mysite_beat.log
 
 # ; Put process stderr output in this file
-# stderr_logfile=/var/log/celery/mysite_worker.log
+# stderr_logfile=/var/log/celery/mysite_beat.log
 
 ; If true, this program will start automatically when supervisord is started
 autostart=true

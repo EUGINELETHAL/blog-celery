@@ -6,7 +6,7 @@
 [program:mysitecelery]
 
 ; Set full path to celery program if using virtualenv
-command=/home/lucy/Videos/blogrepo/venv/bin/celery worker -A mysite --loglevel=INFO
+command=/home/lucy/Videos/blogrepo/.venv/bin/celery worker -A mysite --loglevel=INFO
 
 ; The directory to your Django project
 directory=/home/lucy/Videos/blogrepo/Mysite

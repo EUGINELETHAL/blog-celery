@@ -46,6 +46,9 @@
 
                     <p class="card-text">{{post.content|slice:":200" }}</p>
                     <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                    <a href="{% url 'comment' post.pk  %}" class="btn btn-primary">Comments &rarr;</a>
+                    
+
                   </div>
                  
                 </div>
